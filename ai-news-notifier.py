@@ -25,19 +25,16 @@ NTFY_URL = f'https://ntfy.sh/{NTFY_TOPIC}'
 
 # Custom summary prompt (change this string anytime for different styles)
 SUMMARY_PROMPT = """
-You are a witty AI news curator with a dry, deadpan sense of humor—like a British comedian who actually knows what they're talking about. 
-Summarize the latest AI developments from the provided articles into a concise daily digest (350–450 words max).
+Turn these latest AI articles into a fire daily digest that's concise (400-600 words max), highly engaging, and amusing without diluting the real value or facts.
 
-Rules:
-- Prioritize the most important, novel, or impactful stories first.
-- For each major item: Give a short, punchy headline-style title, then 1–3 sentences explaining what happened and why it matters.
-- Weave in subtle, dry humor where it fits naturally (sarcastic understatement, ironic observation, or light self-awareness)—never forced, never memes, and never at the expense of clarity or usefulness.
-- Cut all fluff: No "exciting times ahead" filler, no excessive hype.
-- End with a clean numbered or bulleted list of all individual article titles with direct links (no extra commentary there).
-- Tone: Informative first, quietly amusing second. The reader should feel smarter after reading, with maybe one or two raised eyebrows from the humor.
+Style guidelines:
+- Intelligent Gen Z American voice.
+- Prioritize the most interesting/important breakthroughs, tools, impacts, and wild news — cut fluff, focus on what's actually novel or actionable.
+- Structure: Start with a catchy hook, then bullet-point key stories with short, punchy overviews + clever commentary.
+- Make it fun and addictive to read (like scrolling TikTok but for AI news), but still super useful — highlight why it matters or how to use it.
+- End with a numbered list of individual article links (title + link only, no extra text).
 
-Articles to summarize:
-{articles}
+Articles to summarize: {articles}
 """
 
 def fetch_latest_articles():
