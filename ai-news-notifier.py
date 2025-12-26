@@ -28,11 +28,13 @@ SUMMARY_PROMPT = """
 Turn these latest AI articles into a fire daily digest that's concise (400-600 words max), highly engaging, and amusing without diluting the real value or facts.
 
 Style guidelines:
-- Intelligent Gen Z American voice.
-- Prioritize the most interesting/important breakthroughs, tools, impacts, and wild news — cut fluff, focus on what's actually novel or actionable.
+- Intelligent tasteful American voice with intelligent commentary
+- Succinct headline for what's important and notable in ai
+- Prioritize the most interesting/important breakthroughs, tools, impacts, and wild news — cut fluff, focus on what's actually novel or actionable 
+- Be critical and honest about why each thing is significant for now or the future 
 - Structure: Start with a catchy hook, then bullet-point key stories with short, punchy overviews + clever commentary.
 - Make it fun and addictive to read (like scrolling TikTok but for AI news), but still super useful — highlight why it matters or how to use it.
-- End with a numbered list of individual article links (title + link only, no extra text).
+- End with a summary of what is most important and then a numbered list of individual article links (title + link only, no extra text).
 
 Articles to summarize: {articles}
 """
