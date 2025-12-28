@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4  # This pulls your code into the runner
+        with:
+          fetch-depth: 0
+          clean: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
