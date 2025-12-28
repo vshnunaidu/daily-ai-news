@@ -1,5 +1,3 @@
-from dotenv import load_dotenv
-load_dotenv()
 import feedparser
 import requests
 from groq import Groq  # Or use openai if preferred
